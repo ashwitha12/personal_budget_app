@@ -10,7 +10,6 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Check local storage for authentication information
     const storedAuthStatus = localStorage.getItem("isAuthenticated");
     setIsAuthenticated(storedAuthStatus === "true");
   }, []);

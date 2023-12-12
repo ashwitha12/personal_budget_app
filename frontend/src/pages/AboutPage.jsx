@@ -6,7 +6,7 @@ function AboutPage() {
     <>
       <Hero/>
       <div>
-          AboutPage
+          Application made by Ashwitha Lingannagari which can be used to manage budget and Expenses.
       </div>
     </>
   );

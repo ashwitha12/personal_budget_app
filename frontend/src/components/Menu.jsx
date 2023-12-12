@@ -24,6 +24,7 @@ function Menu() {
               <Button component={Link} to="/about" color="inherit">
                 About
               </Button>
+              
             </ListItem>
             {isAuthenticated && (
               <>
@@ -47,15 +48,18 @@ function Menu() {
             {!isAuthenticated && (
               <>
                 <ListItem style={{ marginLeft: "70vw" }}>
+                <Button component={Link} to="/signup" color="inherit">
+                    SignUp
+                  </Button>
                   <Button component={Link} to="/login" color="inherit">
                     Login
                   </Button>
                 </ListItem>
-                <ListItem>
+                {/* <ListItem>
                   <Button component={Link} to="/signup" color="inherit">
                     SignUp
                   </Button>
-                </ListItem>
+                </ListItem> */}
               </>
             )}
             {isAuthenticated && (

@@ -56,16 +56,14 @@ function App() {
           console.log("timer called");
           setShowDialog(true);
         }
-      }, 1000); // Update remaining time every second
+      }, 1000); 
 
       return () => clearInterval(timer);
     }
   }, [token]);
 
   const handleStayLoggedIn = async () => {
-    // Handle user choosing to stay logged in
     try {
-      // Implement any necessary actions to refresh the token or extend the session
       const response = await fetch("http://127.0.0.1:3000/users/refreshToken", {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
@@ -84,7 +82,6 @@ function App() {
   };
 
   const handleLogout = () => {
-    // Handle user choosing to logout
     setShowDialog(false);
     logout();
   };
