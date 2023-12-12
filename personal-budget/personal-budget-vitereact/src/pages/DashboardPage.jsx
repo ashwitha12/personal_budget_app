@@ -16,7 +16,7 @@ const DashboardPage = () => {
 
   useEffect(() => {
     console.log(selectedDate);
-    fetch("http://localhost:3000/users/getUserDetails", {
+    fetch("http://34.198.59.129:3000/users/getUserDetails", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
